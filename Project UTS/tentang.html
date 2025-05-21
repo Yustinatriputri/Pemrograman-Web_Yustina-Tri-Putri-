@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tentang Kami - HOTEL DEL LUNA</title>
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-image: url('tengah.jpg'); /* Ganti sesuai gambar header kamu */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 128, 0.5); /* lapisan biru */
+      z-index: 1;
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 2;
+    }
+
+    nav {
+      background-color: #007BFF;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0056b3;
+      margin-top: 40px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tentang Kami</h1>
+    <p>Mengenal Lebih Dekat HOTEL DEL LUNA</p>
+  </header>
+
+  <section id="fasilitas">
+    <h2>Fasilitas Hotel</h2>
+    <ul>
+      <li>Kolam Renang Outdoor</li>
+      <li>Wi-Fi Gratis di Seluruh Area</li>
+      <li>Spa & Wellness Center</li>
+      <li>Pusat Kebugaran (Gym)</li>
+      <li>Layanan Kamar 24 Jam</li>
+      <li>Tempat Parkir Luas dan Aman</li>
+    </ul>
+    <div class="gallery">
+      <img src="gym.jpeg" alt="Fasilitas 1">
+      <img src="kolam.jpeg" alt="Fasilitas 2">
+      <img src="spa.jpeg" alt="Fasilitas 3">
+      <img src="restoran.jpeg" alt="Fasilitas 4">
+      <img src="parkir.jpeg" alt="Fasilitas 5">
+      <img src="layanan.jpeg" alt="Fasilitas 6">
+    </div>
+  </section>
+
+  <section id="restoran">
+    <h2>Restoran</h2>
+    <p>Restoran kami menyajikan beragam hidangan lokal dan internasional dalam suasana nyaman dan elegan. Sarapan buffet tersedia setiap pagi, serta layanan makanan kamar sepanjang hari.</p>
+    <div class="gallery">
+      <img src="makan1.jpeg" alt="Restoran 1">
+      <img src="makan2.jpeg" alt="Restoran 2">
+      <img src="makan3.jpeg" alt="Restoran 3">
+      <img src="minum1.jpeg" alt="Restoran 4">
+      <img src="minum2.jpeg" alt="Restoran 5">
+      <img src="minum3.jpeg" alt="Restoran 6">
+    </div>
+  </section>
+
+  <section id="lokasi">
+    <h2>Lokasi Hotel</h2>
+    <p>HOTEL DEL LUNA terletak di jantung kota Jakarta:</p>
+    <p><strong>Alamat:</strong> Jl. Harmoni No.1, Jakarta Pusat, Indonesia</p>
+    <p>Hanya beberapa menit dari pusat perbelanjaan, kantor pemerintahan, dan tempat wisata terkenal.</p>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak Hotel</h2>
+    <p>Hubungi kami untuk reservasi atau informasi lebih lanjut:</p>
+    <p><strong>Telepon:</strong> (021) 123-4567</p>
+    <p><strong>Email:</strong> info@hoteldelluna.co.id</p>
+    <p><strong>Instagram:</strong> @hoteldelluna</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HOTEL DEL LUNA. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

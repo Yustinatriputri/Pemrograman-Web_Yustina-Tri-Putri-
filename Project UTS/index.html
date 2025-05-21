@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HOTEL DEL LUNA</title>
+  <style>
+    body {
+     font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-image: url('tengah.jpg'); /* Gambar latar utama */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 128, 0.5); /* Overlay biru */
+      z-index: 1;
+    }
+
+    .title-box {
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      padding: 20px 40px;
+      background-image: url('images/hotel-text-bg.jpg'); /* Gambar khusus bagian teks */
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .title-box h1, .title-box p {
+      margin: 0;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+    nav {
+      background-color: #0056b3;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0056b3;
+    }
+
+    /* Galeri Foto */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="title-box">
+      <h1>HOTEL DEL LUNA</h1>
+      <p>Kenyamanan Anda Prioritas Kami</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="kamar.html">Kamar</a>
+    <a href="meeting.html">Meeting & Event</a>
+    <a href="lokasi.html">Lokasi</a>
+    <a href="profil.html">Profil Programmer</a>
+  </nav>
+
+  <section id="galeri">
+    <h2>Galeri Hotel</h2>
+    <div class="gallery">
+      <img src="ruang.jpeg" alt="Foto Hotel 1">
+      <img src="loby.jpeg" alt="Foto Hotel 2">
+      <img src="1.jpeg" alt="Foto Hotel 3">
+      <img src="depan.jpeg" alt="Foto Hotel 4">
+      <img src="spa.jpeg" alt="Foto Hotel 5">
+      <img src="hotel1.jpeg" alt="Foto Hotel 6">
+      <img src="ruang-rapat.jpeg" alt="Foto Hotel 7">
+      <img src="resto.jpeg" alt="Foto Hotel 8">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HOTEL DEL LUNA. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lokasi - HOTEL DEL LUNA</title>
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-image: url('tengah.jpg'); /* GANTI dengan path gambar kamu */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 128, 0.6); /* Overlay biru transparan */
+      z-index: 1;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 2;
+    }
+
+    nav {
+      background-color: #007BFF;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0056b3;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .alamat {
+      background-color: #e6f0ff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lokasi Hotel</h1>
+    <p>Temukan Kami di Pusat Kota Jakarta</p>
+  </header>
+
+  <section>
+    <div class="alamat">
+      <h2>Alamat Kami</h2>
+      <p><strong>HOTEL DEL LUNA</strong></p>
+      <p>Jl. Harmoni No.1, Jakarta Pusat, Indonesia</p>
+      <p>Telepon: (021) 123-4567</p>
+      <p>Email: info@hoteldelluna.co.id</p>
+    </div>
+
+    <h2>Peta Lokasi</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.566253781535!2d106.82301321476945!3d-6.189158795521352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2021783f3%3A0x4b82d67cf6df070!2sHotel%20Harmoni%2C%20Jakarta!5e0!3m2!1sid!2sid!4v1716276800000" 
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HOTEL DEL LUNA. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

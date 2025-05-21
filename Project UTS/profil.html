@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil Programmer - HOTEL DEL LUNA</title>
+  <style>
+    /* Reset dan dasar */
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    /* Container utama supaya footer di bawah */
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background-color: #0056b3;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      flex-shrink: 0;
+    }
+
+    /* Navigasi */
+    nav {
+      background-color: #007BFF;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      flex-shrink: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Konten utama */
+    .content {
+      flex: 1; /* Isi ruang sisa */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    /* Container profil programmer */
+    .profile-wrapper {
+      display: flex;
+      gap: 40px;
+      max-width: 900px;
+      width: 100%;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      align-items: center;
+    }
+
+    .profile-img {
+      flex-shrink: 0;
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 5px solid #007BFF;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info h2 {
+      color: #0056b3;
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    .info p {
+      margin: 8px 0;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .info strong {
+      color: #007BFF;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      flex-shrink: 0;
+      font-size: 14px;
+    }
+
+    /* Responsif */
+    @media (max-width: 768px) {
+      .profile-wrapper {
+        flex-direction: column;
+        text-align: center;
+      }
+      .profile-img {
+        width: 200px;
+        height: 200px;
+      }
+      .info {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+
+
+    <main class="content">
+      <div class="profile-wrapper">
+        <img src="profil.jpeg" alt="Foto Programmer" class="profile-img" />
+        <div class="info">
+          <h2>Yustina Tri Putri Sinaga</h2>
+          <p><strong>NPM:</strong> 221510071</p>
+          <p><strong>Jurusan:</strong> Sistem Informasi</p>
+          <p><strong>Email:</strong> iniyuyus09@gmail.com</p>
+         <p><strong>Instagram:</strong> <a href="https://www.instagram.com/whoooiiam?igsh=b3FkajlvamFnZ2g4" target="_blank" style="color: #007BFF; text-decoration: none;">@whoooiiam</a></p>
+
+          <p>Saya adalah mahasiswa Sistem Informasi yang memiliki minat besar dalam pengembangan website, desain antarmuka pengguna, dan teknologi web modern. Website ini saya buat sebagai bagian dari proyek tugas akhir saya dengan tema perhotelan.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 HOTEL DEL LUNA. Website by Nama Programmer</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
+
+

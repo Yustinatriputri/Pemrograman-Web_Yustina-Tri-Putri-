@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meeting & Event - HOTEL DEL LUNA</title>
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-image: url('tengah.jpg'); /* Ganti dengan path gambar header */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 128, 0.6);
+      z-index: 1;
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 2;
+    }
+
+    nav {
+      background-color: #0056b3;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0056b3;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .paket-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .paket {
+      flex: 1;
+      min-width: 250px;
+      background-color: #e6f0ff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .paket h3 {
+      color: #0056b3;
+    }
+
+    .paket ul {
+      padding-left: 20px;
+      list-style-type: square;
+    }
+
+    footer {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meeting & Event</h1>
+    <p>Solusi Ruang Pertemuan dan Acara Anda di HOTEL DEL LUNA</p>
+  </header>
+
+
+  <section>
+    <h2>Fasilitas Ruang Meeting & Event</h2>
+    <p>Hotel ini menyediakan berbagai fasilitas lengkap untuk menjamin kenyamanan dan kepuasan para tamu. Terdapat kamar yang nyaman dengan desain modern, dilengkapi dengan AC, televisi layar datar, koneksi Wi-Fi gratis, serta kamar mandi pribadi. Untuk memenuhi kebutuhan bersantai dan relaksasi, hotel juga menyediakan kolam renang, pusat kebugaran, serta spa. Selain itu, tersedia restoran dengan berbagai pilihan menu lokal dan internasional, layanan kamar 24 jam, serta area parkir yang luas. Fasilitas ruang rapat dan ballroom juga tersedia bagi tamu yang ingin mengadakan acara bisnis atau perayaan khusus. Dengan pelayanan yang ramah dan profesional, hotel ini menjadi pilihan ideal untuk menginap, baik untuk keperluan bisnis maupun liburan.
+ menawarkan ruang serbaguna dengan kapasitas hingga 500 orang, dilengkapi dengan teknologi modern dan layanan profesional untuk menjamin kelancaran acara Anda. Hotel ini menyediakan berbagai fasilitas lengkap untuk menjamin kenyamanan dan kepuasan para tamu. Terdapat kamar yang nyaman dengan desain modern, dilengkapi dengan AC, televisi layar datar, koneksi Wi-Fi gratis, serta kamar mandi pribadi. Untuk memenuhi kebutuhan bersantai dan relaksasi, hotel juga menyediakan kolam renang, pusat kebugaran, serta spa. Selain itu, tersedia restoran dengan berbagai pilihan menu lokal dan internasional, layanan kamar 24 jam, serta area parkir yang luas. Fasilitas ruang rapat dan ballroom juga tersedia bagi tamu yang ingin mengadakan acara bisnis atau perayaan khusus. Dengan pelayanan yang ramah dan profesional, hotel ini menjadi pilihan ideal untuk menginap, baik untuk keperluan bisnis maupun liburan.
+</p>
+  </section>
+  <section>
+    <h2>Galeri Meeting & Event</h2>
+    <div class="gallery">
+      <img src="ruang-rapat.jpeg" alt="Meeting Room 1">
+      <img src="ruangrapat.jpeg" alt="Meeting Room 2">
+      <img src="event1.jpeg" alt="Event Room 1">
+      <img src="event2.jpeg" alt="Event Room 2">
+      <img src="conf.jpeg" alt="Conference Setup">
+      <img src="bouqet.jpeg" alt="Banquet Event">
+      <img src="NIKAH1.jpeg" alt="Wedding">
+      <img src="nikah2.jpeg" alt="Wedding">
+    </div>
+  </section>
+
+  <section id="paket">
+    <h2>Paket Meeting & Event</h2>
+    <p>Kami menyediakan berbagai pilihan paket sesuai kebutuhan acara Anda:</p>
+
+    <div class="paket-container">
+      <div class="paket">
+        <h3>Paket Half Day</h3>
+        <ul>
+          <li>Durasi 4 jam</li>
+          <li>Coffee break 1x</li>
+          <li>Ruang meeting & sound system</li>
+          <li>Air mineral & alat tulis</li>
+          <li>Harga mulai dari Rp 250.000/orang</li>
+        </ul>
+      </div>
+
+      <div class="paket">
+        <h3>Paket Full Day</h3>
+        <ul>
+          <li>Durasi 8 jam</li>
+          <li>Coffee break 2x & lunch</li>
+          <li>LCD Projector & layar</li>
+          <li>Fasilitas standar meeting</li>
+          <li>Harga mulai dari Rp 400.000/orang</li>
+        </ul>
+      </div>
+
+      <div class="paket">
+        <h3>Paket Event Spesial</h3>
+        <ul>
+          <li>Dekorasi sesuai tema</li>
+          <li>MC & hiburan</li>
+          <li>Buffet & snack corner</li>
+          <li>Pilihan ballroom atau outdoor</li>
+          <li>Harga disesuaikan kebutuhan</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HOTEL DEL LUNA. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
